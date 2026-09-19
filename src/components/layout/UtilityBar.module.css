@@ -1,0 +1,33 @@
+.bar {
+  background: var(--color-soft-cloud);
+  color: var(--color-ink);
+  height: 36px;
+  display: flex;
+  align-items: center;
+}
+
+.inner {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-xl);
+}
+
+.link {
+  font-size: var(--text-caption-sm);
+  font-weight: 500;
+  color: var(--color-ink);
+  white-space: nowrap;
+}
+
+.link:hover {
+  color: var(--color-charcoal);
+}
+
+@media (max-width: 640px) {
+  .inner {
+    justify-content: center;
+    gap: var(--space-lg);
+    overflow-x: auto;
+  }
+}
