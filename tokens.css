@@ -1,0 +1,89 @@
+/*
+  Design tokens transcribed from the Nike design-system analysis (DESIGN.md).
+  Font substitutes per the doc's own guidance: Bebas Neue for the 96px
+  display-campaign tier, Inter for every UI/body/button/caption tier.
+*/
+:root {
+  /* Brand & surface */
+  --color-primary: #111111;
+  --color-on-primary: #ffffff;
+  --color-canvas: #ffffff;
+  --color-soft-cloud: #f5f5f5;
+  --color-ink: #111111;
+  --color-charcoal: #39393b;
+  --color-ash: #4b4b4d;
+  --color-mute: #707072;
+  --color-stone: #9e9ea0;
+  --color-hairline: #cacacb;
+  --color-hairline-soft: #e5e5e5;
+
+  /* Semantic */
+  --color-sale: #d30005;
+  --color-sale-deep: #780700;
+  --color-success: #007d48;
+  --color-success-bright: #1eaa52;
+  --color-info: #1151ff;
+  --color-info-deep: #0034e3;
+
+  /* Category accents — reserved for swatches / soft tiles / editorial washes only */
+  --color-accent-pink: #ed1aa0;
+  --color-accent-pink-soft: #ffb0dd;
+  --color-accent-purple-soft: #beaffd;
+  --color-accent-purple-pale: #d6d1ff;
+  --color-accent-teal: #0a7281;
+  --color-accent-pink-deep: #4c012d;
+
+  /* Type families */
+  --font-display: "Bebas Neue", "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+  --font-ui: "Inter", "Helvetica Now Text", Helvetica, Arial, sans-serif;
+
+  /* Type scale */
+  --text-display-campaign: 96px;
+  --text-display-campaign-tablet: 64px;
+  --text-display-campaign-mobile: 48px;
+  --text-heading-xl: 32px;
+  --text-heading-lg: 24px;
+  --text-heading-md: 16px;
+  --text-body-md: 16px;
+  --text-body-strong: 16px;
+  --text-button-lg: 24px;
+  --text-button-md: 16px;
+  --text-button-sm: 14px;
+  --text-link-md: 16px;
+  --text-caption-md: 14px;
+  --text-caption-sm: 12px;
+  --text-utility-xs: 9px;
+
+  /* Radii */
+  --radius-none: 0px;
+  --radius-sm: 18px;
+  --radius-md: 24px;
+  --radius-lg: 30px;
+  --radius-full: 9999px;
+
+  /* Spacing (8px base grid) */
+  --space-xxs: 2px;
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 18px;
+  --space-xl: 24px;
+  --space-xxl: 30px;
+  --space-section: 48px;
+  --space-section-tablet: 32px;
+  --space-section-mobile: 24px;
+
+  /* Layout */
+  --content-max: 1440px;
+  --gutter: 24px;
+  --gutter-wide: 80px;
+
+  /* Elevation — the system has no drop shadows, only hairlines */
+  --elevation-inset-bottom: inset 0 -1px 0 var(--color-hairline-soft);
+
+  /* Motion */
+  --ease-standard: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 150ms;
+  --duration-standard: 320ms;
+  --duration-slow: 600ms;
+}

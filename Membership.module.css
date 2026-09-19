@@ -1,0 +1,10 @@
+.faqSection {
+  max-width: 720px;
+}
+
+.intro {
+  color: var(--color-charcoal);
+  max-width: 640px;
+  margin-bottom: var(--space-xl);
+  line-height: 1.6;
+}

@@ -1,0 +1,61 @@
+/* Smooth, restrained motion vocabulary — reveal-on-scroll and the
+   Nike "tap collapse" pressed-button feedback (scale 0.5 / opacity 0.5),
+   extracted verbatim from the design spec's button-primary-active state. */
+
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes reveal-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.reveal.is-visible {
+  animation: reveal-up var(--duration-slow) var(--ease-standard) forwards;
+}
+
+.reveal-fade {
+  opacity: 0;
+}
+
+.reveal-fade.is-visible {
+  animation: reveal-fade var(--duration-slow) var(--ease-standard) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal-fade {
+    opacity: 1;
+    transform: none;
+    animation: none !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
